@@ -8,9 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+@class LSIPhotoOfTheDay;
+
+typedef void (^LSIInformationPhotoOfTheDayFetcher)(LSIPhotoOfTheDay * _Nullable information, NSError * _Nullable error);
+typedef void (^LSIPhotoOfTheDayFetcher)(NSURL * _Nullable url, NSError * _Nullable error);
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LSIPhotoOfTheDayController : NSObject
+
+- (void)fetchPhotoOfTheDayInformationWithDate:(NSString *)date
+                              completionBlock:(LSIInformationPhotoOfTheDayFetcher)completionBlock;
+
+-(void)fetchPhotoOfTheDayWithDate:(NSString *)date
+                  completionBlock:(LSIPhotoOfTheDayFetcher)completionBlock;
 
 @end
 
