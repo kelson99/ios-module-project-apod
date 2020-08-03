@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)fetchPhotoOfTheDayInformationWithDate:(NSString *)date
                               completionBlock:(LSIInformationPhotoOfTheDayFetcher)completionBlock;
 
--(void)fetchPhotoOfTheDayWithDate:(NSString *)date
+-(void)fetchPhotoOfTheDayWithURL:(NSURL *)url
                   completionBlock:(LSIPhotoOfTheDayFetcher)completionBlock;
 
 @end

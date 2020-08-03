@@ -7,8 +7,11 @@
 //
 
 #import "LSIPhotosOfTheDayCollectionViewController.h"
+#import "LSIPhotoOfTheDayController.h"
 
 @interface LSIPhotosOfTheDayCollectionViewController ()
+
+@property LSIPhotoOfTheDayController *controller;
 
 @end
 
@@ -18,6 +21,17 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (_controller == nil) {
+        LSIPhotoOfTheDayController *newController = [[LSIPhotoOfTheDayController alloc] init];
+        [newController fetchPhotoOfTheDayInformationWithDate:@"" completionBlock:^(LSIPhotoOfTheDay * _Nullable information, NSError * _Nullable error) {
+            if (information) {
+                NSLog(@"SUCESS");
+            }
+        }];
+        
+    }
+    
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;

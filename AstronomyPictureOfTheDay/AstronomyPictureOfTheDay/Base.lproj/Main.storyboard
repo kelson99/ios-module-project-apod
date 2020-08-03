@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="960.86956521739137" y="196.875"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--iPhotos Of The Day Collection View Controller-->
         <scene sceneID="rTR-5j-Wld">
             <objects>
-                <collectionViewController id="b05-oe-Gcs" sceneMemberID="viewController">
+                <collectionViewController id="b05-oe-Gcs" customClass="LSIPhotosOfTheDayCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="9qw-Kl-BVx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="1715.9420289855075" y="197.54464285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--iPhoto Of The Day Detail View Controller-->
         <scene sceneID="7km-gU-fRF">
             <objects>
-                <viewController id="IbU-R4-AVa" sceneMemberID="viewController">
+                <viewController id="IbU-R4-AVa" customClass="LSIPhotoOfTheDayDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kvf-cr-im1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
