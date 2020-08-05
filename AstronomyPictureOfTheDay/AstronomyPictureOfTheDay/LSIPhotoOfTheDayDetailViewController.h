@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class LSIPhotoOfTheDay;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LSIPhotoOfTheDayDetailViewController : UIViewController
+
+@property LSIPhotoOfTheDay *photo;
+
+
 
 @end
 

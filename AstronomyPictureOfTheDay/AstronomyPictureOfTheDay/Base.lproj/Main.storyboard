@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash Screen View Controller-->
         <scene sceneID="ynX-D4-D3N">
             <objects>
-                <viewController id="YlR-sM-2Dp" sceneMemberID="viewController">
+                <viewController id="YlR-sM-2Dp" customClass="LSISplashScreenViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="htV-vh-2XZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b05-oe-Gcs" kind="show" id="ucy-2N-do6"/>
+                                    <segue destination="77K-OO-4GI" kind="show" identifier="CollectionView" id="lLg-NT-8m8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Astronomy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIj-Gu-fjG">
@@ -48,44 +48,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6B7-99-C2V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="960.86956521739137" y="196.875"/>
-        </scene>
-        <!--iPhotos Of The Day Collection View Controller-->
-        <scene sceneID="rTR-5j-Wld">
-            <objects>
-                <collectionViewController id="b05-oe-Gcs" customClass="LSIPhotosOfTheDayCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="9qw-Kl-BVx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NVM-3h-za0">
-                            <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PwU-mM-Rok">
-                                <rect key="frame" x="10" y="10" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Uki-PX-lnv">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionViewCellContentView>
-                                <connections>
-                                    <segue destination="IbU-R4-AVa" kind="show" id="Z6Z-kC-RS8"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="b05-oe-Gcs" id="O5O-3T-b6t"/>
-                            <outlet property="delegate" destination="b05-oe-Gcs" id="fpJ-8a-RNk"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="TdG-Sm-FL2"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a7d-VN-JLE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1715.9420289855075" y="197.54464285714286"/>
         </scene>
         <!--iPhoto Of The Day Detail View Controller-->
         <scene sceneID="7km-gU-fRF">
@@ -106,10 +68,13 @@
                     <navigationItem key="navigationItem" id="8gW-fV-vYw">
                         <barButtonItem key="rightBarButtonItem" title="Info" id="eKM-Fi-enO"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="aFl-sg-W2S" id="AAO-Pd-9Ry"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0s-z9-EKd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2482.608695652174" y="196.875"/>
+            <point key="canvasLocation" x="2470" y="177"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="E7k-Hd-6gX">
@@ -128,6 +93,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmx-0e-9nA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="167" y="198"/>
+        </scene>
+        <!--iPhotos Collection View Controller-->
+        <scene sceneID="d04-xH-3KX">
+            <objects>
+                <collectionViewController id="77K-OO-4GI" customClass="LSIPhotosCollectionViewController" customModule="AstronomyPictureOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5Gj-Wv-nj6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KGY-Ed-P9f">
+                            <size key="itemSize" width="153" height="163"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="12q-QE-Pcw" customClass="LSIPhotoCollectionViewCell" customModule="AstronomyPictureOfTheDay" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="153" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zZK-3F-jrt">
+                                    <rect key="frame" x="0.0" y="0.0" width="153" height="163"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qf2-t3-cib">
+                                            <rect key="frame" x="0.0" y="0.0" width="153" height="163"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.71372549019999998" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="customSize" width="153" height="163"/>
+                                <connections>
+                                    <outlet property="imageView" destination="Qf2-t3-cib" id="20W-za-ZMo"/>
+                                    <segue destination="IbU-R4-AVa" kind="show" identifier="ShowDetail" id="foH-Gc-uTu"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="77K-OO-4GI" id="neh-S0-qkd"/>
+                            <outlet property="delegate" destination="77K-OO-4GI" id="kgq-4P-2gs"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="tT3-jn-YQd"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sBw-0Z-jUc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.8550724637682" y="176.78571428571428"/>
         </scene>
     </scenes>
     <resources>

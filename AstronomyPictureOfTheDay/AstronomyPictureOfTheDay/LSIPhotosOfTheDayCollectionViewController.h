@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class LSIPhotoOfTheDayController;
+@class LSIPhotoOfTheDay;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LSIPhotosOfTheDayCollectionViewController : UICollectionViewController
+@property (nonatomic) LSIPhotoOfTheDayController *controller;
+@property (nonatomic) NSArray<LSIPhotoOfTheDay *> *photosArrayOk;
 
 @end
 

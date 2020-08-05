@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property NSString *title;
-@property NSURL *imageURL;
+@property (nullable) NSURL *imageURL;
 @property NSString *explanation;
 @property NSString *date;
 

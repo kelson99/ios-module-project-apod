@@ -7,8 +7,10 @@
 //
 
 #import "LSIPhotoOfTheDayDetailViewController.h"
+#import "LSIPhotoOfTheDay.h"
 
 @interface LSIPhotoOfTheDayDetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -16,7 +18,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self updateViews];
+    
+}
+
+- (void)updateViews {
+    if (self.photo) {
+        NSData *data = [[NSData alloc] initWithContentsOfURL:self.photo.imageURL];
+        self.imageView.image = [[UIImage alloc]initWithData:data];
+
+    }
+    
 }
 
 /*

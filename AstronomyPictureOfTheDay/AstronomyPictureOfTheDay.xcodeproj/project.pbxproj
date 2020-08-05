@@ -17,11 +17,20 @@
 		50444F9C24D887620048EFE7 /* LSIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 50444F9524D887620048EFE7 /* LSIErrors.m */; };
 		50444F9D24D887620048EFE7 /* LSIFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50444F9624D887620048EFE7 /* LSIFileHelper.m */; };
 		50444F9E24D887620048EFE7 /* URL+Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50444F9A24D887620048EFE7 /* URL+Secure.swift */; };
-		50B524D524D88BCF0042BFA1 /* LSIPhotosOfTheDayCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B524D424D88BCF0042BFA1 /* LSIPhotosOfTheDayCollectionViewController.m */; };
 		50B524D824D88BF00042BFA1 /* LSIPhotoOfTheDayDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B524D724D88BF00042BFA1 /* LSIPhotoOfTheDayDetailViewController.m */; };
 		50B524DB24D88C9F0042BFA1 /* LSIPhotoOfTheDayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B524DA24D88C9F0042BFA1 /* LSIPhotoOfTheDayController.m */; };
 		50B524DD24D88CF70042BFA1 /* PhotoOfTheDay.json in Resources */ = {isa = PBXBuildFile; fileRef = 50B524DC24D88CF70042BFA1 /* PhotoOfTheDay.json */; };
 		50B524E024D88D180042BFA1 /* LSIPhotoOfTheDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B524DF24D88D180042BFA1 /* LSIPhotoOfTheDay.m */; };
+		50B524E324D8C5600042BFA1 /* LSIPhotosOfTheDaysResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B524E224D8C5600042BFA1 /* LSIPhotosOfTheDaysResults.m */; };
+		50B524E624D9AF170042BFA1 /* LSISplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B524E524D9AF170042BFA1 /* LSISplashScreenViewController.m */; };
+		50B524E824D9C5200042BFA1 /* LSIPhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B524E724D9C5200042BFA1 /* LSIPhotosCollectionViewController.swift */; };
+		50B524ED24D9CBDC0042BFA1 /* LSIPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B524EC24D9CBDC0042BFA1 /* LSIPhotoCollectionViewCell.swift */; };
+		50B524F024D9EB2A0042BFA1 /* LSIPhotoFetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B524EF24D9EB2A0042BFA1 /* LSIPhotoFetchOperation.m */; };
+		50B524F224DA45B00042BFA1 /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B524F124DA45B00042BFA1 /* ConcurrentOperation.swift */; };
+		50B524F424DA46BB0042BFA1 /* PhotoFetchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B524F324DA46BB0042BFA1 /* PhotoFetchOperation.swift */; };
+		50B524F624DA47260042BFA1 /* FilterImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B524F524DA47260042BFA1 /* FilterImageOperation.swift */; };
+		50B524F824DA47BF0042BFA1 /* Image+Filtering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B524F724DA47BF0042BFA1 /* Image+Filtering.swift */; };
+		50B524FA24DA4AC10042BFA1 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B524F924DA4AC10042BFA1 /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +60,20 @@
 		50B524DC24D88CF70042BFA1 /* PhotoOfTheDay.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PhotoOfTheDay.json; sourceTree = "<group>"; };
 		50B524DE24D88D180042BFA1 /* LSIPhotoOfTheDay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPhotoOfTheDay.h; sourceTree = "<group>"; };
 		50B524DF24D88D180042BFA1 /* LSIPhotoOfTheDay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPhotoOfTheDay.m; sourceTree = "<group>"; };
+		50B524E124D8C5600042BFA1 /* LSIPhotosOfTheDaysResults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPhotosOfTheDaysResults.h; sourceTree = "<group>"; };
+		50B524E224D8C5600042BFA1 /* LSIPhotosOfTheDaysResults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPhotosOfTheDaysResults.m; sourceTree = "<group>"; };
+		50B524E424D9AF170042BFA1 /* LSISplashScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSISplashScreenViewController.h; sourceTree = "<group>"; };
+		50B524E524D9AF170042BFA1 /* LSISplashScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSISplashScreenViewController.m; sourceTree = "<group>"; };
+		50B524E724D9C5200042BFA1 /* LSIPhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSIPhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		50B524EB24D9C6890042BFA1 /* AstronomyPictureOfTheDay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AstronomyPictureOfTheDay.h; sourceTree = "<group>"; };
+		50B524EC24D9CBDC0042BFA1 /* LSIPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSIPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		50B524EE24D9EB2A0042BFA1 /* LSIPhotoFetchOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPhotoFetchOperation.h; sourceTree = "<group>"; };
+		50B524EF24D9EB2A0042BFA1 /* LSIPhotoFetchOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPhotoFetchOperation.m; sourceTree = "<group>"; };
+		50B524F124DA45B00042BFA1 /* ConcurrentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentOperation.swift; sourceTree = "<group>"; };
+		50B524F324DA46BB0042BFA1 /* PhotoFetchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFetchOperation.swift; sourceTree = "<group>"; };
+		50B524F524DA47260042BFA1 /* FilterImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterImageOperation.swift; sourceTree = "<group>"; };
+		50B524F724DA47BF0042BFA1 /* Image+Filtering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Filtering.swift"; sourceTree = "<group>"; };
+		50B524F924DA4AC10042BFA1 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +125,20 @@
 				50B524DC24D88CF70042BFA1 /* PhotoOfTheDay.json */,
 				50B524DE24D88D180042BFA1 /* LSIPhotoOfTheDay.h */,
 				50B524DF24D88D180042BFA1 /* LSIPhotoOfTheDay.m */,
+				50B524E124D8C5600042BFA1 /* LSIPhotosOfTheDaysResults.h */,
+				50B524E224D8C5600042BFA1 /* LSIPhotosOfTheDaysResults.m */,
+				50B524E424D9AF170042BFA1 /* LSISplashScreenViewController.h */,
+				50B524E524D9AF170042BFA1 /* LSISplashScreenViewController.m */,
+				50B524E724D9C5200042BFA1 /* LSIPhotosCollectionViewController.swift */,
+				50B524EB24D9C6890042BFA1 /* AstronomyPictureOfTheDay.h */,
+				50B524EC24D9CBDC0042BFA1 /* LSIPhotoCollectionViewCell.swift */,
+				50B524EE24D9EB2A0042BFA1 /* LSIPhotoFetchOperation.h */,
+				50B524EF24D9EB2A0042BFA1 /* LSIPhotoFetchOperation.m */,
+				50B524F124DA45B00042BFA1 /* ConcurrentOperation.swift */,
+				50B524F324DA46BB0042BFA1 /* PhotoFetchOperation.swift */,
+				50B524F524DA47260042BFA1 /* FilterImageOperation.swift */,
+				50B524F724DA47BF0042BFA1 /* Image+Filtering.swift */,
+				50B524F924DA4AC10042BFA1 /* Cache.swift */,
 			);
 			path = AstronomyPictureOfTheDay;
 			sourceTree = "<group>";
@@ -192,17 +229,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B524E824D9C5200042BFA1 /* LSIPhotosCollectionViewController.swift in Sources */,
+				50B524E324D8C5600042BFA1 /* LSIPhotosOfTheDaysResults.m in Sources */,
+				50B524F024D9EB2A0042BFA1 /* LSIPhotoFetchOperation.m in Sources */,
+				50B524ED24D9CBDC0042BFA1 /* LSIPhotoCollectionViewCell.swift in Sources */,
 				50444F9E24D887620048EFE7 /* URL+Secure.swift in Sources */,
 				50B524D824D88BF00042BFA1 /* LSIPhotoOfTheDayDetailViewController.m in Sources */,
+				50B524FA24DA4AC10042BFA1 /* Cache.swift in Sources */,
+				50B524F424DA46BB0042BFA1 /* PhotoFetchOperation.swift in Sources */,
 				50444F9B24D887620048EFE7 /* LSILog.m in Sources */,
 				50444F7C24D887110048EFE7 /* AppDelegate.m in Sources */,
+				50B524F224DA45B00042BFA1 /* ConcurrentOperation.swift in Sources */,
 				50444F8D24D887130048EFE7 /* main.m in Sources */,
 				50444F9D24D887620048EFE7 /* LSIFileHelper.m in Sources */,
 				50444F7F24D887110048EFE7 /* SceneDelegate.m in Sources */,
 				50B524E024D88D180042BFA1 /* LSIPhotoOfTheDay.m in Sources */,
 				50B524DB24D88C9F0042BFA1 /* LSIPhotoOfTheDayController.m in Sources */,
+				50B524F624DA47260042BFA1 /* FilterImageOperation.swift in Sources */,
+				50B524E624D9AF170042BFA1 /* LSISplashScreenViewController.m in Sources */,
 				50444F9C24D887620048EFE7 /* LSIErrors.m in Sources */,
-				50B524D524D88BCF0042BFA1 /* LSIPhotosOfTheDayCollectionViewController.m in Sources */,
+				50B524F824DA47BF0042BFA1 /* Image+Filtering.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +397,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KelsonHartle.AstronomyPictureOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = AstronomyPictureOfTheDay/AstronomyPictureOfTheDay.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -369,6 +416,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KelsonHartle.AstronomyPictureOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = AstronomyPictureOfTheDay/AstronomyPictureOfTheDay.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

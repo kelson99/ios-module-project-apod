@@ -10,7 +10,10 @@
 
 @implementation LSIPhotoOfTheDay
 
-- (instancetype)initWithTitle:(NSString *)title imageURL:(NSURL *)url explanation:(NSString *)explanation date:(NSString *)date {
+-(instancetype)initWithTitle:(NSString *)title
+   imageURL:(NSURL *)url
+explanation:(NSString *)explanation
+       date:(NSString *)date {
     
     self = [super init];
     
@@ -19,26 +22,23 @@
         _imageURL = url;
         _explanation = [explanation copy];
         _date = [date copy];
+        
     }
     return self;
 }
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     
+    
+    
     NSString *title = dictionary[@"title"];
     NSString *imageURLString = dictionary[@"hdurl"];
     NSURL *imageURL = [NSURL URLWithString:imageURLString];
     NSString *explanation = dictionary[@"explanation"];
     NSString *date = dictionary[@"date"];
-    
-    
-    
+
     self = [self initWithTitle:title imageURL:imageURL explanation:explanation date:date];
     return self;
 }
-
-
-
-
 
 @end
