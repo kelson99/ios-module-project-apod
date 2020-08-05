@@ -66,7 +66,13 @@
                         <viewLayoutGuide key="safeArea" id="neu-4j-Zaw"/>
                     </view>
                     <navigationItem key="navigationItem" id="8gW-fV-vYw">
-                        <barButtonItem key="rightBarButtonItem" title="Info" id="eKM-Fi-enO"/>
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="eKM-Fi-enO">
+                            <connections>
+                                <segue destination="t73-zf-hcp" kind="popoverPresentation" identifier="ShowSummary" popoverAnchorBarButtonItem="eKM-Fi-enO" id="R7F-xj-MnZ">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="aFl-sg-W2S" id="AAO-Pd-9Ry"/>
@@ -75,6 +81,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0s-z9-EKd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2470" y="177"/>
+        </scene>
+        <!--Summary View Controller-->
+        <scene sceneID="Ycb-VB-Rhx">
+            <objects>
+                <viewController id="t73-zf-hcp" customClass="LSISummaryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mkw-tY-5q7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jtS-fe-fL3">
+                                <rect key="frame" x="20" y="20" width="374" height="788"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jtS-fe-fL3" firstAttribute="bottom" secondItem="Cdy-Ff-giT" secondAttribute="bottom" id="HMJ-Dt-qs2"/>
+                            <constraint firstItem="jtS-fe-fL3" firstAttribute="leading" secondItem="Cdy-Ff-giT" secondAttribute="leading" constant="20" id="Yap-u0-iOr"/>
+                            <constraint firstItem="Cdy-Ff-giT" firstAttribute="trailing" secondItem="jtS-fe-fL3" secondAttribute="trailing" constant="20" id="f07-WU-JI8"/>
+                            <constraint firstItem="jtS-fe-fL3" firstAttribute="top" secondItem="Cdy-Ff-giT" secondAttribute="top" constant="20" id="t8d-B6-sa6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cdy-Ff-giT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RbZ-gk-JOH"/>
+                    <connections>
+                        <outlet property="textView" destination="jtS-fe-fL3" id="ok7-p7-hfi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnc-ft-bCK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3202.898550724638" y="176.78571428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="E7k-Hd-6gX">

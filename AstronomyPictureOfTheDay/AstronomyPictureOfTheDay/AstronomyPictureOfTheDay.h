@@ -17,3 +17,4 @@
 #import "LSIPhotoOfTheDayController.h"
 #import "LSIPhotoFetchOperation.h"
 #import "LSIPhotoOfTheDayDetailViewController.h"
+#import "LSISummaryViewController.h"

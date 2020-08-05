@@ -31,6 +31,7 @@
 		50B524F624DA47260042BFA1 /* FilterImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B524F524DA47260042BFA1 /* FilterImageOperation.swift */; };
 		50B524F824DA47BF0042BFA1 /* Image+Filtering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B524F724DA47BF0042BFA1 /* Image+Filtering.swift */; };
 		50B524FA24DA4AC10042BFA1 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B524F924DA4AC10042BFA1 /* Cache.swift */; };
+		50B85BD924DB0B3000569E8E /* LSISummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B85BD824DB0B3000569E8E /* LSISummaryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,8 @@
 		50B524F524DA47260042BFA1 /* FilterImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterImageOperation.swift; sourceTree = "<group>"; };
 		50B524F724DA47BF0042BFA1 /* Image+Filtering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Filtering.swift"; sourceTree = "<group>"; };
 		50B524F924DA4AC10042BFA1 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		50B85BD724DB0B3000569E8E /* LSISummaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSISummaryViewController.h; sourceTree = "<group>"; };
+		50B85BD824DB0B3000569E8E /* LSISummaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSISummaryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				50B524F524DA47260042BFA1 /* FilterImageOperation.swift */,
 				50B524F724DA47BF0042BFA1 /* Image+Filtering.swift */,
 				50B524F924DA4AC10042BFA1 /* Cache.swift */,
+				50B85BD724DB0B3000569E8E /* LSISummaryViewController.h */,
+				50B85BD824DB0B3000569E8E /* LSISummaryViewController.m */,
 			);
 			path = AstronomyPictureOfTheDay;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 				50B524F224DA45B00042BFA1 /* ConcurrentOperation.swift in Sources */,
 				50444F8D24D887130048EFE7 /* main.m in Sources */,
 				50444F9D24D887620048EFE7 /* LSIFileHelper.m in Sources */,
+				50B85BD924DB0B3000569E8E /* LSISummaryViewController.m in Sources */,
 				50444F7F24D887110048EFE7 /* SceneDelegate.m in Sources */,
 				50B524E024D88D180042BFA1 /* LSIPhotoOfTheDay.m in Sources */,
 				50B524DB24D88C9F0042BFA1 /* LSIPhotoOfTheDayController.m in Sources */,
